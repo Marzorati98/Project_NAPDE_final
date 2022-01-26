@@ -32,7 +32,7 @@ Link of the library "Model learning": https://github.com/FrancescoRegazzoni/mode
 
 2) Folder covid
     * covid_training: allows to train network with tests created with previous files (and save the neural networks)
-    * prediction allows: to use the trained network to evaluate on new data and try some predictions.
+    * prediction: allows to use the trained network to evaluate on new data and try some predictions.
        + .ini: (eg: COV.ini) allows to define the problem (number of inputs and output, the extrema values...).
        + _opt.ini (eg: COV_opt.ini) allows to define all the parameters for the training (dataset, penalizations, number of iterations, structure of the ANN...).
        + Two examples are provided.
