@@ -46,3 +46,12 @@ Remark: All the matlab files are written with many comments. Each step is very d
 3) Train the ANN indicating the number of tests and the hyperparameters in ".ini" and "opt.ini" and run the training file.
 4) If you have enough data (new ones) use the prediction file to estimate the error or compare scenarios.
 
+## Bibliography
+[1] F.Regazzoni, L.Dede’, and A.Quarteroni. Machine learning for fast and
+reliable solution of time-dependent differential equations. (2019).
+[2] Roberto Battiston. "Un modo semplice per calcolare r(t)." (2020).
+[3] Politecnico di Milano MOX, Dipartimento di Matematica. epiMox website.
+(2020-2022).
+
+
+
