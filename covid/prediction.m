@@ -3,7 +3,7 @@ clear
 close all 
 stream = RandStream('dsfmt19937','Seed',3);
 
-%% ============= 1 - Load problem - =============
+%% ============= 1 - Load problem, data and ANN - =============
 %% Define the problem 
 % Important to check all the parameters in '.ini' file before to run
 
@@ -13,12 +13,16 @@ problem2 = problem_get('covid','COV2.ini');
 %% Load Data and models
 
 load('scenario_org2','Tests')
+%real values for models type 2
 dataset_save(problem2 ,Tests,'sc_org2.mat')
+
+%scenario without vaccine
 for i =1 :length(Tests)
 Tests{i}.uu(1,:)=zeros(1,length(Tests{i}));
 end
 dataset_save(problem2 ,Tests,'sc_nul2.mat')
 
+%real values models type 1
 for i =1 :length(Tests)
 Tests{i}.uu(1,:)=[];
 end
@@ -44,7 +48,8 @@ learned_model_name = 'model_H_v1_D_b_int_N1_hlayF2_dof11_ntrain208_2022-01-23_21
 ANNmod2_b = read_model_fromfile(problem2,learned_model_name);
 
 
-%% Error evaluation
+%% ============= 2 - Error evaluation - =============
+
 %Error is computed for each region (for each network)
 close all
 
@@ -138,7 +143,7 @@ legend('Mod1_a','Mod1_b','Mod2_a','Mod2_b')
 set(findall(gcf,'-property','FontSize'),'FontSize',20)
 set(findall(gcf,'-property','LineWidth'),'LineWidth',2.5)
 set(findall(gcf,'-property','MarkerSize'),'MarkerSize',12)
-%% Prediction over a scenario
+%% ============= 3 - Scenario - =============
 
 % Scenario without vaccin
 dataset_def.source = 'sc_nul2.mat;[1:22]';
