@@ -13,7 +13,7 @@ function [Tests,len] = create_dataset(Data_in,Data_out,num_d, step_d, vec_reg,..
 %   - (smoothout, smoothin) : 2 vectors of boolean used to smooth data (or
 %   not).
     - Prediction : boolean in the case of prediction shuffle the tests is not
-    useful.
+    needed.
     
 % Output : 
 %   -Tests : collection of cells similar to the one of Data_in/Data_out but
@@ -27,7 +27,7 @@ stream = RandStream('dsfmt19937','Seed',3);
 
 
 for ii = 1 : length(vec_reg)
-    
+    % Here we fix the region
     region = vec_reg(ii);
     input = Data_in{region};
     output = Data_out{region};
@@ -36,7 +36,7 @@ for ii = 1 : length(vec_reg)
     % Filter (matlab function) : moving average
     %{
     We have created our own filter but the one one matlab is more flexible.
-%}
+    %}
     windowSize = 10; 
     b = (1/windowSize)*ones(1,windowSize);
     a = 1;
@@ -52,7 +52,7 @@ for ii = 1 : length(vec_reg)
             input(jj,:)=filter(b,a,input(jj,:));
         end
     end
-       
+    % Creation of the Tests
         iter=1;
         
         while Tmax-iter>num_d
