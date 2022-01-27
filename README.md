@@ -16,10 +16,10 @@ Link of the library "Model learning": https://github.com/FrancescoRegazzoni/mode
    * To have the current data (covid in Italy) you can download the last files at the following links:
       + https://github.com/pcm-dpc/COVID-19/blob/master/dati-andamento-covid19-italia.md
       + https://github.com/italia/covid19-opendata-vaccini
-         - The names of the files we used are the same on both website.
-         - On the first website it could be difficult to download the data due to the huge number of files...
+         - The names of the files we used are the same on both sites.
+         - On the first site it could be difficult to download the data due to the huge number of files...
          - Add the files in the folder (:/Model_Learning/examples/data_preparation).
-         - Here are already data from February 2020 to January 2021.
+         - Here are already data from 24 February 2020 to 20 January 2021.
     
 ### Folder and its files
 
