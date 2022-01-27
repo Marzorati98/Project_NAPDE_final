@@ -13,10 +13,9 @@ Link of the library "Model learning": https://github.com/FrancescoRegazzoni/mode
 ## First step: Installation 
    * Download the 'Model learning' at the indicated address.
    * Download the folder covid and add it in the folder (:/Model_Learning/examples/)
-   * To have the current data (covid in Italy) you can download the last files at the following links:
+   * To have the current data (covid in Italy) the last files can be downloaded at the following links:
       + https://github.com/pcm-dpc/COVID-19/blob/master/dati-andamento-covid19-italia.md
       + https://github.com/italia/covid19-opendata-vaccini
-         - The names of the files we used are the same on both sites.
          - On the first site it could be difficult to download the data due to the huge number of files...
          - Add the files in the folder (:/Model_Learning/examples/data_preparation).
          - Here are already data from 24 February 2020 to 20 January 2021.
@@ -42,9 +41,9 @@ Remark: All the matlab files are written with many comments. Each step is very d
 ## How to procede ?
  
 1) Extract the data with data_extraction (save it)
-2) Choose the interesting data, the corresponding dates, the size times of your tests/scenarios as in the example in data_transformation and save them.
+2) Choose the interesting data, the corresponding dates, the size times of the tests/scenarios as in the example in data_transformation and save them.
 3) Train the ANN indicating the number of tests and the hyperparameters in ".ini" and "opt.ini" and run the training file.
-4) If you have enough data (new ones) use the prediction file to estimate the error or compare scenarios.
+4) If enough data (new ones), use the prediction file to estimate the error or compare scenarios.
 
 ## Bibliography
 [1] F.Regazzoni, L.Dede’, and A.Quarteroni. Machine learning for fast and
