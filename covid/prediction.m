@@ -45,7 +45,7 @@ ANNmod2_b = read_model_fromfile(problem2,learned_model_name);
 
 
 %% Error evaluation
-%Error is computed for each network for each region
+%Error is computed for each region (for each network)
 close all
 
 % Model 1_a without vaccin
@@ -118,6 +118,7 @@ mean(error_1_a)
 mean(error_1_b)
 mean(error_2_a)
 mean(error_2_b)
+
 %% Plot the error
 names = {'Abruzzo' ;'Basilicata'; 'Calabria'; 'Campania' ;'Emilia-Romagna';...
     'Friuli Venezia Giulia' ;'Lazio' ;'Liguria'; 'Lombardia' ;'Marche' ;...
@@ -130,9 +131,7 @@ plot(1:22,error_1_b,'*')
 plot(1:22,error_2_a,'o')
 plot(1:22,error_2_b,'^')
 grid ON
-%grid MINOR
 ylabel('error L_2')
-
 set(gca,'xtick',1:22,'xticklabel',names)
 xtickangle(45)
 legend('Mod1_a','Mod1_b','Mod2_a','Mod2_b')
@@ -147,8 +146,6 @@ test_dataset_3 = dataset_get(dataset_def);
 output_3 = model_solve(test_dataset_3,ANNmod2_b,struct('do_plot',0));
 
 
-
-
 %% Plot the different results
 %Here for Lazio, Lombardy, Trento and Italy
 regs=[7 9 13 22];
@@ -157,6 +154,7 @@ for reg=regs
 
 figure()
 
+%Input data
 subplot(2,2,1)
 plot(output_2_a{reg}.tt,output_2_a{reg}.uu,'-','linewidth',1.2)
 axis([0 output_1_a{1,1}.tt(end) min(ANNmod1_a.problem.u_min) max(ANNmod1_a.problem.u_max)])
@@ -164,6 +162,7 @@ ylabel('u')
 legend('Vacinnated','Hospitalized')
 grid ON
 
+% Results models type 1 vs real values
 subplot(2,2,2)
 plot(output_1_a{reg}.tt_y,output_1_a{reg}.yy,'-.','linewidth',1.2) 
 hold on
@@ -175,6 +174,7 @@ hold off
 ylabel('y')
 grid ON
 
+% Results models type 2 vs real values
 subplot(2,2,3)
 plot(output_2_a{reg}.tt_y,output_2_a{reg}.yy,'--','linewidth',1.2) 
 hold on
@@ -186,6 +186,7 @@ hold off
 ylabel('y')
 grid ON
 
+% Best model type 2 : scenario vs reality
 subplot(2,2,4)
 plot(output_2_b{reg}.tt_y,output_2_b{reg}.yy,'--','linewidth',1.2) 
 axis([0 output_1_a{1,1}.tt(end) min(ANNmod1_a.problem.y_min) max(ANNmod1_a.problem.y_max)])
