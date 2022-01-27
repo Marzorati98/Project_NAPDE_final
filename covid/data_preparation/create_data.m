@@ -25,22 +25,25 @@ end
 
 % Transofrmation of the data
 %{
-- First a translation can be done to put the first value to zero.
-- Each variable is first normalized w.r.t the size of the population.
-- Then the variable is put in the interval [0,1].
-- Finally each variable is distributed to its correponding region.
+- a) First a translation can be done to put the first value to zero.
+- b) Each variable is normalized w.r.t the size of the population.
+- c) Then the variable is put in the interval [0,1].
+- d) Finally each variable is distributed to its correponding region.
 %}
 for var = 1 : n_var
     var_data=data{var};
-    
+    % a)
     if out_b
         var_data=var_data-var_data(:,1);
     end
+    % b)
     var_data=var_data./pop_reg;
     
+    % c)
     var_data=(var_data-min(var_data,[],2))./(max(var_data,[],2)-min(var_data,[],2));
     %var_data=(var_data-min(var_data,[],2))./(ones(22,1)-min(var_data,[],2));
     
+    % d)
     for reg = 1 : 22
         reg_data=Data{reg};
         reg_data(var,:)=var_data(reg,:);
