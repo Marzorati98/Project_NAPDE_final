@@ -67,11 +67,15 @@ the regions in this order :
 20 - Valle d'Aosta
 21 - Veneto
 
-Pay attention the file from the website dealing with vaccine data orders the
+Pay attention the file from the website for vaccine data orders the
 regions with respect to the ISTAT number and the corresponding sequence is :
-Istat = [13 17 18 15 8 6 12 7 3 11 14 21 4 1 16 20 19 9 10 2 5]
- !! P.A Bolzano is also 4 in realty so it has to be dealt carefully for the
- vaccine file.
+
+Istat = [13 17 18 15 8 6 12 7 3 11 14 21 4 1 16 20 19 9 10 2 5] (for the previous list)
+
+The region of Trentino-Alto Adige is split into the two auntonomous provinces Bolzano and Trento.
+The Istat 21 is given to Bolzano and 4 is kept for Trento (normally they have the same). 
+When ones extracts vaccine data Bolzano has to be dealt carefully.
+
 
 %% Example : 
 % Number total of days  : length(Data_regioni)/number_regions
@@ -185,7 +189,7 @@ end
 
 %% 2- Vaccinated %%
 %{
-We kept a cumulative version for the vaccine because the number of
+A cumulative version for the vaccine is chosen because the number of
 vaccinated in total seems to be more important that the number of daily
 vaccinated.
 %}
