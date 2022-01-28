@@ -3,7 +3,7 @@ close all
 clear
 %% Create Dataset
 
-your_folder = '/Users/marzo/Desktop/covid/project_covid/examples/covid';
+your_folder = '/Users/model_learning/examples/covid';
 
 stream = RandStream('dsfmt19937','Seed',3); % Reproducible results
 
