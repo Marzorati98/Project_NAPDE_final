@@ -8,12 +8,12 @@ on the following website :
 - https://github.com/pcm-dpc/COVID-19/blob/master/dati-andamento-covid19-italia.md
 - https://github.com/italia/covid19-opendata-vaccini/tree/master/dati
 
-The main idea is to select different data from regions or the country
+The main idea is to select different data from regions or from the country
 (Italy) in order to learn the equivalent of a SUHITER model by machine
 learning.
 
-The work accomplished so far is basic considering only hospitalized, dead
-and vaccinated first dose. But the results could be improved with other
+The work accomplished so far is considers only hospitalized, dead
+and vaccinated with the first dose. But the results could be improved with other
 considerations which are very easy to add.
 %}
 
