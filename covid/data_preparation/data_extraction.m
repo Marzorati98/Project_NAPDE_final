@@ -67,8 +67,8 @@ the regions in this order :
 20 - Valle d'Aosta
 21 - Veneto
 
-Pay attention the file from the website dealing with vaccine data order the
-regions with respect to the ISTAT number the corresponding sequence is :
+Pay attention the file from the website dealing with vaccine data orders the
+regions with respect to the ISTAT number and the corresponding sequence is :
 Istat = [13 17 18 15 8 6 12 7 3 11 14 21 4 1 16 20 19 9 10 2 5]
  !! P.A Bolzano is also 4 in realty so it has to be dealt carefully for the
  vaccine file.
