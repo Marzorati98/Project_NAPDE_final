@@ -74,7 +74,7 @@ Istat = [13 17 18 15 8 6 12 7 3 11 14 21 4 1 16 20 19 9 10 2 5] (for the previou
 
 The region of Trentino-Alto Adige is split into the two auntonomous provinces Bolzano and Trento.
 The Istat 21 is given to Bolzano and 4 is kept for Trento (normally they have the same). 
-When ones extracts vaccine data Bolzano has to be dealt carefully.
+When vaccine data are extracted Bolzano has to be dealt carefully.
 
 
 %% Example : 
