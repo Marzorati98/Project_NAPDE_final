@@ -241,7 +241,7 @@ path_file = fullfile(your_folder,'model2_HV_D.mat'); % Data file name
 save(path_file,'Tests')
 %}
 %% Prediction model 2  input  : ospedalizzati, vacinated_1d ; output : deceduti 
-%%{
+%{
 % Try to predict the number of dead w.r.t
 % the numbers of vaccinated (first dose) people and hospitalized. 
 % Expected : t_norm = 30
