@@ -1,4 +1,4 @@
-%% Fixed randomicity to reproduce experience plus bien ta mère
+%% Fixed randomicity to reproduce experiences
 clear 
 close all 
 stream = RandStream('dsfmt19937','Seed',3);
