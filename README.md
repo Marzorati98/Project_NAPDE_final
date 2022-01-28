@@ -12,12 +12,12 @@ Link of the library "Model learning": https://github.com/FrancescoRegazzoni/mode
 
 ## First step: Installation 
    * Download the 'Model learning' at the indicated address.
-   * Download the folder covid and add it in the folder (:/Model_Learning/examples/)
+   * Download the folder covid and add it in the folder (:/model_learning/examples/)
    * To have the current data (covid in Italy) the last files can be downloaded at the following links:
       + https://github.com/pcm-dpc/COVID-19/blob/master/dati-andamento-covid19-italia.md
       + https://github.com/italia/covid19-opendata-vaccini
          - On the first site it could be difficult to download the data due to the huge number of files...
-         - Add the files in the folder (:/Model_Learning/examples/covid/data_preparation).
+         - Add the files in the folder (:/model_learning/examples/covid/data_preparation).
          - Here are already data from 24 February 2020 to 20 January 2021.
     
 ### Folder and its files
