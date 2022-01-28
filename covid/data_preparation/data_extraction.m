@@ -12,7 +12,7 @@ The main idea is to select different data from regions or from the country
 (Italy) in order to learn the equivalent of a SUHITER model by machine
 learning.
 
-The work accomplished so far is considers only hospitalized, dead
+The work accomplished so far considers only hospitalized, dead
 and vaccinated with the first dose. But the results could be improved with other
 considerations which are very easy to add.
 %}
