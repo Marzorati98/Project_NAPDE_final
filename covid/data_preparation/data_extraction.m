@@ -43,34 +43,31 @@ Data_regioni(:,i) i = 1 : 11 ;
 11 - tamponi
 
 Good to know if you transform one column of the table to an array you have 
-the regions in this order :
+the regions in this order (and their ISTAT)  :
 
-1  - Abruzzo
-2  - Basilicata
-3  - Calabria
-4  - Campania
-5  - Emilia-Romagna
-6  - Friuli Venezia Giulia
-7  - Lazio
-8  - Liguria
-9  - Lombardia
-10 - Marche
-11 - Molise
-12 - P.A. Bolzano
-13 - P.A. Trento
-14 - Piemonte
-15 - Puglia
-16 - Sardegna
-17 - Sicilia
-18 - Toscana
-19 - Umbria
-20 - Valle d'Aosta
-21 - Veneto
+1  - Abruzzo (13)
+2  - Basilicata (17)
+3  - Calabria (18)
+4  - Campania (15)
+5  - Emilia-Romagna (8)
+6  - Friuli Venezia Giulia (6) 
+7  - Lazio (12) 
+8  - Liguria (7) 
+9  - Lombardia (3) 
+10 - Marche (11) 
+11 - Molise (14) 
+12 - P.A. Bolzano (21) 
+13 - P.A. Trento (4) 
+14 - Piemonte (1) 
+15 - Puglia (16) 
+16 - Sardegna (20) 
+17 - Sicilia (19) 
+18 - Toscana (9) 
+19 - Umbria (10) 
+20 - Valle d'Aosta (2) 
+21 - Veneto (5)
 
-Pay attention the file from the website for vaccine data orders the
-regions with respect to the ISTAT number and the corresponding sequence is :
-
-Istat = [13 17 18 15 8 6 12 7 3 11 14 21 4 1 16 20 19 9 10 2 5] (for the previous list)
+Pay attention the file from the website for vaccine data orders the regions with respect to the ISTAT number.
 
 The region of Trentino-Alto Adige is split into the two auntonomous provinces Bolzano and Trento.
 The Istat 21 is given to Bolzano and 4 is kept for Trento (normally they have the same). 
