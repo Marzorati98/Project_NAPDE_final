@@ -22,7 +22,7 @@ clear
 
 %% Files & Folders path (precise owner folder) :
 
-your_folder = '/Users/marzo/Desktop/covid/project_covid/examples/covid';
+your_folder = '/Users/model_learning/examples/covid';
 
 path_file = fullfile(your_folder,'data_preparation','Dati_covid_vac2.mat'); % Data file name
 
