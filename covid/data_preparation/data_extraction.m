@@ -22,9 +22,9 @@ clear
 
 %% Files & Folders path (precise owner folder) :
 
-your_folder = '/Users/model_learning/examples/covid';
+your_folder = '/Users/model_learning/examples/covid/data_preparation';
 
-path_file = fullfile(your_folder,'data_preparation','Dati_covid_vac2.mat'); % Data file name
+path_file = fullfile(your_folder,'Dati_covid_vac.mat'); % Data file name
 
 %% Explanations for using Data_regioni (array)
 %{
