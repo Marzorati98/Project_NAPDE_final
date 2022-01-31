@@ -4,9 +4,9 @@ Politecnico di Milano: NAPDE
 
 Authors: Biafora Lucrezia, Marelli Alessandra, Marzorati Arsène
 
-Professors: Dede Luca, Quarteroni Alfio, Regazzoni Francesco
+Professors: Dedè Luca, Quarteroni Alfio, Regazzoni Francesco
 
-Goal: The project is to apply the Matlab Library "Model Learning" to the Covid situation.
+Goal: The project is to apply the Matlab Library "Model Learning" to the Covid-19 situation.
 
 Link of the library "Model learning": https://github.com/FrancescoRegazzoni/model-learning.
 
